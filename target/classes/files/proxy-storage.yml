@@ -1,0 +1,27 @@
+disabled-servers:
+  - server-with-no-pat
+global:
+  commands:
+    - hub
+  ignored-servers:
+    - auth-*
+  servers:
+    lobby-*:
+      commands:
+        - spawn
+    faction-1:
+      commands:
+        - kit
+groups:
+  examplegroup:
+    priority: 1
+    commands:
+      - tell
+      - msg
+    servers:
+      lobby-*:
+        commands:
+          - cosmetics
+      factions-1:
+        commands:
+          - premiumkit
